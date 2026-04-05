@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import ProductHero from '@/components/shared/ProductHero';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 import HomeCTA from '@/components/home/HomeCTA';
@@ -82,9 +83,20 @@ export default function GuluvaPage() {
         <div className="max-w-4xl mx-auto">
           <ScrollReveal className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">For hire companies and for customers</h2>
-            <p className="text-white/70 text-lg leading-relaxed">
+            <p className="text-white/70 text-lg leading-relaxed mb-8">
               Guluva is a dual-sided platform. Hire companies manage their fleet, pricing and bookings. Customers browse, book and pay, all in one place.
             </p>
+            <Link
+              href="https://guluva.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white bg-[#f97316] hover:opacity-90 transition-all hover:scale-[1.02] text-sm"
+            >
+              Visit Guluva
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </Link>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <ScrollReveal delay={0.1}>
