@@ -6,9 +6,13 @@
   --color-accent-green: #4ade80;
 }
 
-/* ─── Base styles ─────────────────────────────── */
+/* ─── Base ─────────────────────────────── */
 html {
   scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -21,6 +25,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ─── Gradient text ───────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 55%, #34d399 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-warm {
+  background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* ─── Hero gradient animation ─────────────────── */
 @keyframes gradient-shift {
   0%   { background-position: 0% 50%; }
@@ -29,28 +48,69 @@ body {
 }
 
 .hero-gradient {
-  background: linear-gradient(135deg, #0a1e3a 0%, #1e3a6f 40%, #0f2d55 70%, #0a1e3a 100%);
+  background: linear-gradient(135deg, #050b14 0%, #0a1e3a 40%, #0f1f38 70%, #050b14 100%);
   background-size: 300% 300%;
-  animation: gradient-shift 12s ease infinite;
+  animation: gradient-shift 16s ease infinite;
 }
 
-/* ─── CTA pulse dot ───────────────────────────── */
+/* ─── CTA pulse ─────────────────────────────── */
 @keyframes cta-pulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.8);
-    opacity: 0;
-  }
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.8); opacity: 0; }
 }
 
 .cta-pulse {
   animation: cta-pulse 1.5s ease-in-out infinite;
 }
 
-/* ─── Utility ─────────────────────────────────── */
-* {
-  box-sizing: border-box;
+/* ─── Marquee ─────────────────────────────── */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 22s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ─── Glow button ─────────────────────────── */
+.glow-btn {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 32px rgba(96, 165, 250, 0.35);
+  transform: translateY(-1px);
+}
+
+/* ─── Bento card ──────────────────────────── */
+.bento-card {
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+}
+
+.bento-card:hover {
+  border-color: rgba(255, 255, 255, 0.14);
+  transform: translateY(-2px);
+}
+
+/* ─── Noise texture ──────────────────────── */
+.noise {
+  position: relative;
+}
+
+.noise::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  pointer-events: none;
+  z-index: 1;
 }
