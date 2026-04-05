@@ -34,7 +34,7 @@ const PRODUCTS = [
     tagColor: '#60a5fa',
     tagBg: '#eff6ff',
     description:
-      'Medico connects clinical operations and admin in one platform — from patient bookings to medical aid claims submission with built-in validation.',
+      'Medico connects clinical operations and admin in one platform, from patient bookings to medical aid claims submission with built-in validation.',
     features: [
       'Intelligent appointment scheduling',
       'Digital claims submission with validation',
@@ -98,7 +98,7 @@ export default function SolutionsPage() {
               Business software that works for African markets
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl mx-auto">
-              Leamah was built to handle the realities of doing business in South Africa: load shedding, late payments, complex compliance and a diverse customer base. Our solutions are not imported from other markets and adapted. They were built here.
+              Leamah was built to handle the realities of doing business in South Africa: late payments, complex compliance and a diverse customer base. Our solutions are not imported from other markets and adapted. They were built here.
             </p>
           </ScrollReveal>
         </div>

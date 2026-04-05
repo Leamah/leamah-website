@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://leamah.co.za'),
   title: {
     template: '%s | Leamah',
-    default: 'Leamah — Business Management Software for African SMEs',
+    default: 'Leamah | Business Management Software for African SMEs',
   },
   description:
     'Leamah provides purpose-built business management software for South African SMEs across retail, healthcare, logistics and professional services.',

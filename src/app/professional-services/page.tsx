@@ -4,7 +4,7 @@ import ScrollReveal from '@/components/shared/ScrollReveal';
 import HomeCTA from '@/components/home/HomeCTA';
 
 export const metadata: Metadata = {
-  title: 'Professional Services — Invoicing, Billing and CRM Software',
+  title: 'Professional Services | Invoicing, Billing and CRM Software',
   description:
     'Leamah Professional Services helps consultants, accountants, lawyers and agencies get paid faster with automated invoicing, time tracking and client management.',
 };
@@ -42,7 +42,7 @@ export default function ProfessionalServicesPage() {
       <ProductHero
         badge="Consulting and Services"
         headline="Get paid faster. Spend less time on admin."
-        intro="The Professional Services module gives consultants, agencies and service businesses the tools to run a tight operation — from the first client meeting to the final invoice."
+        intro="The Professional Services module gives consultants, agencies and service businesses the tools to run a tight operation, from the first client meeting to the final invoice."
         features={FEATURES.map((f) => f.title)}
         variant="proservices"
         ctaText="Book a Demo"
@@ -55,7 +55,7 @@ export default function ProfessionalServicesPage() {
           <ScrollReveal className="text-center mb-14">
             <h2 className="text-3xl font-bold text-[#0a1e3a] mb-4">Built for the way service businesses work</h2>
             <p className="text-gray-500 max-w-xl mx-auto">
-              Every feature is designed around the workflow of a professional services business — from proposal to payment.
+              Every feature is designed around the workflow of a professional services business, from proposal to payment.
             </p>
           </ScrollReveal>
 
@@ -86,7 +86,7 @@ export default function ProfessionalServicesPage() {
               Late or missed invoices are one of the biggest cash flow killers for service businesses. The Professional Services module automates the entire billing cycle so nothing slips through.
             </p>
             <p className="text-white/70 text-lg leading-relaxed">
-              Whether you bill by the hour, by project or on retainer, Leamah handles it — and sends automated reminders when payment is overdue.
+              Whether you bill by the hour, by project or on retainer, Leamah handles it and sends automated reminders when payment is overdue.
             </p>
           </ScrollReveal>
         </div>

@@ -4,7 +4,7 @@ import ScrollReveal from '@/components/shared/ScrollReveal';
 import HomeCTA from '@/components/home/HomeCTA';
 
 export const metadata: Metadata = {
-  title: 'Guluva — Equipment Hire and Logistics Software',
+  title: 'Guluva | Equipment Hire and Logistics Software',
   description:
     'Guluva connects equipment hire companies and customers. Online booking for generators, trucks, portable toilets and more. Real-time availability and automated pricing.',
 };
@@ -83,7 +83,7 @@ export default function GuluvaPage() {
           <ScrollReveal className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">For hire companies and for customers</h2>
             <p className="text-white/70 text-lg leading-relaxed">
-              Guluva is a dual-sided platform. Hire companies manage their fleet, pricing and bookings. Customers browse, book and pay — all in one place.
+              Guluva is a dual-sided platform. Hire companies manage their fleet, pricing and bookings. Customers browse, book and pay, all in one place.
             </p>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

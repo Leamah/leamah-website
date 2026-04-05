@@ -9,13 +9,6 @@ export const metadata: Metadata = {
     'Leamah builds business management software for African SMEs. Rooted in South Africa, built by people who understand the challenges of running a business on the continent.',
 };
 
-const TEAM = [
-  { name: 'Khumalo Dlamini', role: 'Chief Executive Officer', image: '/images/team/team-1.webp' },
-  { name: 'Amara Nkosi', role: 'Chief Technology Officer', image: '/images/team/team-2.webp' },
-  { name: 'Thabo Sithole', role: 'Head of Product', image: '/images/team/team-3.webp' },
-  { name: 'Naledi Mokoena', role: 'Head of Customer Success', image: '/images/team/team-4.webp' },
-];
-
 export default function AboutPage() {
   return (
     <>
@@ -43,7 +36,7 @@ export default function AboutPage() {
                 Leamah started from a simple observation: the business software available in South Africa was either too expensive for SMEs, designed for markets with different infrastructure, or so generic it required months of customisation before it became useful.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed">
-                We set out to change that by building products that understand the reality of running a business in South Africa — the load shedding, the complexity of medical aid, the informal supply chains, the late payments. Every feature in every Leamah product was designed with these realities in mind.
+                We set out to change that by building products that understand the reality of running a business in South Africa. Every feature in every Leamah product was designed with these realities in mind.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.12}>
@@ -70,42 +63,10 @@ export default function AboutPage() {
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
               <p className="text-white text-xl sm:text-2xl font-medium leading-relaxed max-w-3xl mx-auto">
-                Our mission is to give every African SME the tools that were previously only available to large corporations at a price that makes sense for the market.
+                Our mission is to provide every African SME the capabilities to remain relevant and competitive in tomorrow&apos;s future.
               </p>
             </div>
           </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="py-24 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <ScrollReveal className="text-center mb-14">
-            <h2 className="text-3xl font-bold text-[#0a1e3a] mb-4">The team behind Leamah</h2>
-            <p className="text-gray-500 max-w-xl mx-auto">
-              A team of builders and operators with deep experience in South African business.
-            </p>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {TEAM.map((member, i) => (
-              <ScrollReveal key={member.name} delay={i * 0.08}>
-                <div className="text-center">
-                  <div className="w-32 h-32 rounded-2xl overflow-hidden mx-auto mb-4 bg-gray-100">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      width={128}
-                      height={128}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <p className="font-bold text-[#0a1e3a]">{member.name}</p>
-                  <p className="text-sm text-gray-500 mt-1">{member.role}</p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
         </div>
       </section>
 

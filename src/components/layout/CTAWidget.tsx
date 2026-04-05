@@ -311,7 +311,7 @@ export default function CTAWidget() {
                           <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <h2 className="text-lg font-bold text-[#0a1e3a] mb-2">Thanks — we will be in touch!</h2>
+                      <h2 className="text-lg font-bold text-[#0a1e3a] mb-2">Thanks. We will be in touch!</h2>
                       <p className="text-sm text-gray-500">A team member will reach out within one business day.</p>
                       <button
                         onClick={close}

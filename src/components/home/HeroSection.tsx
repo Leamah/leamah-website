@@ -83,7 +83,7 @@ export default function HeroSection() {
             }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#4ade80] shadow-[0_0_6px_#4ade80]" />
-            Business Management Software — South Africa
+            Business Management Software | South Africa
           </span>
         </motion.div>
 
@@ -94,7 +94,7 @@ export default function HeroSection() {
           style={{ fontSize: 'clamp(3rem, 8vw, 5.5rem)' }}
         >
           One platform.{' '}
-          <span className="gradient-text">Four industries.</span>
+          <span className="gradient-text">Multiple industries.</span>
           <br />
           Built for Africa.
         </motion.h1>
@@ -106,7 +106,7 @@ export default function HeroSection() {
           style={{ color: 'rgba(255,255,255,0.45)' }}
         >
           Leamah gives South African SMEs the tools to run retail stores, medical practices,
-          logistics operations and professional service businesses — from one platform, at a price that makes sense.
+          logistics operations and professional service businesses from one platform.
         </motion.p>
 
         {/* CTA buttons */}

@@ -18,10 +18,9 @@ const INDUSTRIES = [
     image: '/images/warehouse.jpg',
     imageAlt: 'South African warehouse and retail storage',
     description:
-      'South African retail faces unique pressures: load shedding affecting point-of-sale systems, tight margins and the challenge of managing stock across multiple locations. Zanava was built to handle these realities without expensive enterprise complexity.',
+      'South African retail faces unique pressures: tight margins and the challenge of managing stock across multiple locations. Zanava was built to handle these realities without expensive enterprise complexity.',
     points: [
       'Real-time stock visibility across all locations',
-      'Works through power outages with offline sync',
       'Designed for the South African supplier and logistics context',
     ],
     bgLight: true,
@@ -48,7 +47,7 @@ const INDUSTRIES = [
     image: null,
     imageAlt: null,
     description:
-      'Equipment hire and logistics is a high-demand, high-coordination business. Guluva digitises the entire workflow — from online booking to driver dispatch — so companies can take more work without adding overhead.',
+      'Equipment hire and logistics is a high-demand, high-coordination business. Guluva digitises the entire workflow, from online booking to driver dispatch, so companies can take more work without adding overhead.',
     points: [
       'Online booking removes manual phone and email orders',
       'Automated availability prevents double-bookings',

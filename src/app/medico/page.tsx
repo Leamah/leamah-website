@@ -4,7 +4,7 @@ import ScrollReveal from '@/components/shared/ScrollReveal';
 import HomeCTA from '@/components/home/HomeCTA';
 
 export const metadata: Metadata = {
-  title: 'Medico — Healthcare Practice Management Software',
+  title: 'Medico | Healthcare Practice Management Software',
   description:
     'Medico helps South African clinics and practices manage appointments, submit medical aid claims electronically and track inventory. Purpose-built for healthcare.',
 };

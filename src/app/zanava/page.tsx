@@ -4,7 +4,7 @@ import ScrollReveal from '@/components/shared/ScrollReveal';
 import HomeCTA from '@/components/home/HomeCTA';
 
 export const metadata: Metadata = {
-  title: 'Zanava — Retail and Inventory Management Software',
+  title: 'Zanava | Retail and Inventory Management Software',
   description:
     'Zanava helps South African retailers manage multi-store stock, automate purchase orders, track staff and prevent losses. Real-time visibility for growing retail businesses.',
 };
@@ -55,7 +55,7 @@ export default function ZanavaPage() {
           <ScrollReveal className="text-center mb-14">
             <h2 className="text-3xl font-bold text-[#0a1e3a] mb-4">Everything you need to run a tight operation</h2>
             <p className="text-gray-500 max-w-xl mx-auto">
-              Zanava is built around the realities of South African retail — load shedding, multi-location complexity and thin margins included.
+              Zanava is built around the realities of South African retail, including multi-location complexity and tight margins.
             </p>
           </ScrollReveal>
 
@@ -83,7 +83,7 @@ export default function ZanavaPage() {
           <ScrollReveal>
             <h2 className="text-3xl font-bold text-white mb-6">Built for South African retailers</h2>
             <p className="text-white/70 text-lg leading-relaxed mb-4">
-              Zanava is not an imported solution adapted for local conditions. It was built here, for the challenges you face every day: unreliable power, variable supplier reliability and customers who expect more than ever.
+              Zanava is not an imported solution adapted for local conditions. It was built here, for the challenges you face every day: variable supplier reliability and customers who expect more than ever.
             </p>
             <p className="text-white/70 text-lg leading-relaxed">
               Whether you run a single shop or a chain across multiple provinces, Zanava scales with you and keeps you in control.

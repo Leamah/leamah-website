@@ -22,7 +22,7 @@ const PRODUCTS = [
   {
     name: 'Medico',
     tagline: 'Medical practice management',
-    desc: 'Appointments, claims and patient records — handled.',
+    desc: 'Appointments, claims and patient records, all handled in one place.',
     href: '/medico',
     accent: '#06b6d4',
     glow: 'rgba(6,182,212,0.15)',
@@ -98,10 +98,10 @@ export default function ProductsGrid() {
               style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)' }}
             >
               Purpose-built for{' '}
-              <span className="gradient-text">four industries.</span>
+              <span className="gradient-text">multiple industries.</span>
             </h2>
             <p className="text-white/40 max-w-xl mx-auto text-lg leading-relaxed">
-              Not a generic platform with modules bolted on. Each product is built from scratch for how your business actually works.
+              Each platform is built to manage how your business actually works.
             </p>
           </motion.div>
         </div>
