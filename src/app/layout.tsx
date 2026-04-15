@@ -38,8 +38,10 @@ const jsonLd = {
       contactPoint: {
         '@type': 'ContactPoint',
         email: 'info@leamah.co.za',
+        telephone: '+27-21-891-3999',
         contactType: 'customer service',
         areaServed: 'ZA',
+        availableLanguage: ['en'],
       },
     },
     {

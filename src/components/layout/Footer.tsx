@@ -78,6 +78,14 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a
+                  href="tel:+27218913999"
+                  className="text-white/60 hover:text-white text-sm transition-colors"
+                >
+                  021 891 3999
+                </a>
+              </li>
+              <li>
                 <span className="text-white/60 text-sm">South Africa</span>
               </li>
             </ul>
