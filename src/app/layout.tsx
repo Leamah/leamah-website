@@ -19,10 +19,27 @@ export const metadata: Metadata = {
   },
   description:
     'Leamah provides purpose-built business management software for South African SMEs across retail, healthcare, logistics and professional services.',
+  icons: {
+    icon: '/images/logo.png',
+    apple: '/images/logo.png',
+    shortcut: '/images/logo.png',
+  },
   openGraph: {
     siteName: 'Leamah',
     locale: 'en_ZA',
     type: 'website',
+    images: [
+      {
+        url: '/images/logo.png',
+        width: 512,
+        height: 512,
+        alt: 'Leamah - Business Management Software for African SMEs',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    images: ['/images/logo.png'],
   },
 };
 
