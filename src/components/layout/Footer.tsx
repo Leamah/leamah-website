@@ -27,7 +27,7 @@ export default function Footer() {
               <span className="text-white font-bold text-lg">Leamah</span>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed">
-              Business software built for African SMEs.
+              Tailored solutions built for African SMEs.
             </p>
           </div>
 

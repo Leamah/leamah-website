@@ -66,7 +66,6 @@ export default function HomeCTA() {
 
         <p className="text-lg leading-relaxed mb-10" style={{ color: 'rgba(255,255,255,0.4)' }}>
           Book a 30-minute demo and we will walk you through the right solution for your business.
-          No pressure. No lengthy sales process.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">

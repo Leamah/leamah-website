@@ -101,7 +101,7 @@ export default function ProductsGrid() {
               <span className="gradient-text">multiple industries.</span>
             </h2>
             <p className="text-white/40 max-w-xl mx-auto text-lg leading-relaxed">
-              Each platform is built to manage how your business actually works.
+              Each solution is tailored to how your industry actually works.
             </p>
           </motion.div>
         </div>

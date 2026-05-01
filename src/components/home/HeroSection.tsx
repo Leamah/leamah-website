@@ -1,7 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
+import { useRef } from 'react';
 
 const PRODUCTS = [
   { label: 'Zanava', desc: 'Retail', color: '#f59e0b', href: '/zanava' },
@@ -17,9 +19,28 @@ const fade = (delay: number) => ({
 });
 
 export default function HeroSection() {
+  const imgRef = useRef<HTMLDivElement>(null);
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const rotateX = useSpring(useTransform(mouseY, [-0.5, 0.5], [6, -6]), { stiffness: 200, damping: 30 });
+  const rotateY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-8, 8]), { stiffness: 200, damping: 30 });
+
+  function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
+    const rect = imgRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    mouseX.set((e.clientX - rect.left) / rect.width - 0.5);
+    mouseY.set((e.clientY - rect.top) / rect.height - 0.5);
+  }
+
+  function handleMouseLeave() {
+    mouseX.set(0);
+    mouseY.set(0);
+  }
+
   return (
     <section
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 py-28 noise"
+      className="relative flex flex-col items-center overflow-hidden px-6 pt-28 pb-0 noise"
       style={{ background: '#050b14' }}
     >
       {/* Aurora orbs */}
@@ -70,7 +91,7 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center">
+      <div className="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center w-full">
 
         {/* Badge */}
         <motion.div {...fade(0)} className="mb-8">
@@ -83,7 +104,7 @@ export default function HeroSection() {
             }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#4ade80] shadow-[0_0_6px_#4ade80]" />
-            Business Management Software | South Africa
+            Tailored Business Solutions | South Africa
           </span>
         </motion.div>
 
@@ -93,7 +114,7 @@ export default function HeroSection() {
           className="font-black leading-[1.02] tracking-tight text-white mb-6"
           style={{ fontSize: 'clamp(3rem, 8vw, 5.5rem)' }}
         >
-          One platform.{' '}
+          One partner.{' '}
           <span className="gradient-text">Multiple industries.</span>
           <br />
           Built for Africa.
@@ -105,8 +126,7 @@ export default function HeroSection() {
           className="text-lg sm:text-xl leading-relaxed mb-12 max-w-2xl"
           style={{ color: 'rgba(255,255,255,0.45)' }}
         >
-          Leamah gives South African SMEs the tools to run retail stores, medical practices,
-          logistics operations and professional service businesses from one platform.
+          Leamah partners with South African SMEs to deliver tailored solutions for retail, healthcare, logistics and professional services — built around the realities of doing business in Africa.
         </motion.p>
 
         {/* CTA buttons */}
@@ -164,10 +184,74 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Bottom fade */}
+      {/* Dashboard image */}
+      <motion.div
+        initial={{ opacity: 0, y: 72 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.1, delay: 0.85, ease: [0.22, 1, 0.36, 1] }}
+        className="relative z-10 w-full max-w-6xl mx-auto mt-16 px-2 sm:px-6"
+      >
+        {/* Glow bloom */}
+        <div
+          className="absolute inset-x-16 -bottom-6 h-24 pointer-events-none"
+          style={{
+            background: 'radial-gradient(ellipse, rgba(96,165,250,0.35) 0%, rgba(167,139,250,0.15) 50%, transparent 70%)',
+            filter: 'blur(32px)',
+          }}
+        />
+
+        {/* Floating + tilt wrapper */}
+        <motion.div
+          animate={{ y: [0, -10, 0] }}
+          transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+          style={{ perspective: 1200 }}
+        >
+          <motion.div
+            ref={imgRef}
+            style={{ rotateX, rotateY, transformStyle: 'preserve-3d' }}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            className="relative rounded-2xl overflow-hidden cursor-default"
+            whileHover={{ scale: 1.012 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Shimmer border */}
+            <div
+              className="absolute inset-0 rounded-2xl pointer-events-none z-20"
+              style={{
+                boxShadow: '0 0 0 1px rgba(255,255,255,0.10), 0 32px 80px rgba(0,0,0,0.7), 0 0 60px rgba(96,165,250,0.08)',
+              }}
+            />
+            {/* Top-edge highlight */}
+            <div
+              className="absolute top-0 left-0 right-0 h-px pointer-events-none z-20"
+              style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.18), transparent)' }}
+            />
+
+            <Image
+              src="/images/dashboard-hero.png"
+              alt="Leamah business dashboard"
+              width={1400}
+              height={875}
+              className="w-full h-auto block"
+              priority
+            />
+
+            {/* Subtle inner shine overlay */}
+            <div
+              className="absolute inset-0 pointer-events-none z-10"
+              style={{
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 55%)',
+              }}
+            />
+          </motion.div>
+        </motion.div>
+      </motion.div>
+
+      {/* Bottom fade into next section */}
       <div
-        className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
-        style={{ background: 'linear-gradient(to top, #050b14, transparent)' }}
+        className="absolute bottom-0 left-0 right-0 h-48 pointer-events-none z-20"
+        style={{ background: 'linear-gradient(to top, #050b14 20%, transparent)' }}
       />
     </section>
   );

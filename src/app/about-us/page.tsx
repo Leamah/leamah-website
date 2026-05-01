@@ -20,7 +20,7 @@ export default function AboutPage() {
               About Us
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
-              We build software for African businesses by people who understand African businesses
+              We build tailored solutions for African businesses, by people who understand African businesses
             </h1>
           </ScrollReveal>
         </div>
@@ -33,10 +33,10 @@ export default function AboutPage() {
             <ScrollReveal>
               <h2 className="text-3xl font-bold text-[#0a1e3a] mb-6">Built for Africa, from the ground up</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-4">
-                Leamah started from a simple observation: the business software available in South Africa was either too expensive for SMEs, designed for markets with different infrastructure, or so generic it required months of customisation before it became useful.
+                Leamah started from a simple observation: the solutions available to South African SMEs were either too expensive, designed for markets with different infrastructure, or so generic they required months of customisation before becoming useful.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed">
-                We set out to change that by building products that understand the reality of running a business in South Africa. Every feature in every Leamah product was designed with these realities in mind.
+                We set out to change that by developing solutions that understand the reality of running a business in South Africa. Every Leamah solution was designed with these realities in mind.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.12}>

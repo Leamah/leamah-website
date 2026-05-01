@@ -66,14 +66,14 @@ export default function IndustryStrip() {
               className="font-black text-[#0a1e3a] leading-tight tracking-tight"
               style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}
             >
-              Software built around your industry,{' '}
+              Solutions built around{' '}
               <span style={{
                 background: 'linear-gradient(135deg, #1e3a6f, #0a1e3a)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
               }}>
-                not adapted for it.
+                your industry.
               </span>
             </h2>
           </motion.div>
