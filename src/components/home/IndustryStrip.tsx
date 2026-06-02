@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const INDUSTRIES = [
   {
-    name: 'Inventory and Stock',
+    name: 'Retail and Wholesale',
     product: 'Zanava',
     desc: 'Real-time stock visibility, supplier management and multi-location analytics for businesses of any size.',
     href: '/zanava',

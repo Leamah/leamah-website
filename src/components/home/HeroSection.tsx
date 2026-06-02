@@ -126,7 +126,7 @@ export default function HeroSection() {
           className="text-lg sm:text-xl leading-relaxed mb-12 max-w-2xl"
           style={{ color: 'rgba(255,255,255,0.45)' }}
         >
-          Leamah partners with South African individuals and SMEs to deliver tailored IT solutions across inventory management, healthcare, logistics and professional services, built around the realities of doing business in Africa.
+          Leamah is a South African IT solutions company partnering with individuals and SMEs to deliver purpose-built software that works for your industry and your business, built around the realities of doing business in Africa.
         </motion.p>
 
         {/* CTA buttons */}

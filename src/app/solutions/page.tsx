@@ -6,13 +6,13 @@ import HomeCTA from '@/components/home/HomeCTA';
 export const metadata: Metadata = {
   title: 'Business Software Solutions for South African SMEs',
   description:
-    'Leamah builds purpose-built IT solutions for South African individuals and SMEs across inventory management, healthcare, logistics and professional services.',
+    'Leamah is a South African IT solutions company building purpose-built software for individuals and SMEs. Explore solutions for healthcare, logistics, stock management and professional services.',
 };
 
 const PRODUCTS = [
   {
     name: 'Zanava',
-    tag: 'Inventory and Stock Management',
+    tag: 'Retail and Wholesale',
     tagColor: '#4ade80',
     tagBg: '#f0fdf4',
     description:
@@ -98,7 +98,7 @@ export default function SolutionsPage() {
               Business software that works for African markets
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl mx-auto">
-              Leamah was built to handle the realities of doing business in South Africa: late payments, complex compliance and a diverse customer base. Our solutions are not imported from other markets and adapted. They were built here.
+              Leamah is an IT solutions company built for South African individuals and SMEs. Our solutions were not imported from other markets and adapted. They were designed here, around the real challenges of running a business in Africa.
             </p>
           </ScrollReveal>
         </div>

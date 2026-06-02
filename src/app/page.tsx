@@ -8,7 +8,7 @@ import HomeCTA from '@/components/home/HomeCTA';
 export const metadata: Metadata = {
   title: 'Business Management Software for African SMEs',
   description:
-    'Leamah gives South African individuals and SMEs enterprise-grade IT solutions across inventory management, healthcare, logistics and professional services.',
+    'Leamah is a South African IT solutions company delivering purpose-built software for individuals and SMEs across multiple industries.',
 };
 
 export default function HomePage() {

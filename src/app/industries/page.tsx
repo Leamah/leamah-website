@@ -7,12 +7,12 @@ import HomeCTA from '@/components/home/HomeCTA';
 export const metadata: Metadata = {
   title: 'Industries We Serve',
   description:
-    'Leamah builds purpose-built IT solutions for individuals and SMEs across inventory management, healthcare, logistics and professional services in South Africa.',
+    'Leamah is a South African IT solutions company building purpose-built software for individuals and SMEs across multiple industries.',
 };
 
 const INDUSTRIES = [
   {
-    name: 'Inventory and Stock Management',
+    name: 'Retail and Wholesale',
     product: 'Zanava',
     href: '/zanava',
     image: '/images/warehouse.jpg',
