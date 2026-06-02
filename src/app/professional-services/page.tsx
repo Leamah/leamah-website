@@ -92,6 +92,55 @@ export default function ProfessionalServicesPage() {
         </div>
       </section>
 
+      {/* Klippa section */}
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <ScrollReveal className="flex flex-col md:flex-row items-center gap-12">
+            <div className="flex-1">
+              <span className="inline-block text-xs font-semibold tracking-widest text-[#a78bfa] uppercase mb-4">
+                Powered by Klippa
+              </span>
+              <h2 className="text-3xl font-bold text-[#0a1e3a] mb-5 leading-snug">
+                Keep your finances sharp while you focus on your clients
+              </h2>
+              <p className="text-gray-500 text-lg leading-relaxed mb-4">
+                Klippa brings all your financial responsibilities into one place. Track profitability across projects, monitor business expenses in real time, and stay prepared for tax season without the administrative burden that usually comes with it.
+              </p>
+              <p className="text-gray-500 text-lg leading-relaxed mb-8">
+                From capturing receipts and supplier invoices automatically to giving you a clear picture of where your money is going, Klippa handles the financial groundwork so your practice runs leaner and your books are always in order.
+              </p>
+              <a
+                href="https://klippa.co.za/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0a1e3a] text-white font-semibold text-sm hover:bg-[#a78bfa] transition-colors duration-200"
+              >
+                Visit Klippa
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
+
+            <div className="flex-1 grid grid-cols-1 gap-4">
+              {[
+                { label: 'Expense tracking', detail: 'Capture and categorise every business expense automatically, with no manual data entry required.' },
+                { label: 'Profitability insights', detail: 'See at a glance which clients, projects and service lines are driving your bottom line.' },
+                { label: 'Tax readiness', detail: 'Keep your records organised throughout the year so tax season becomes a formality, not a scramble.' },
+                { label: 'Receipt and invoice capture', detail: 'Snap a photo or forward an email and Klippa extracts and stores the data instantly.' },
+              ].map((item, i) => (
+                <ScrollReveal key={item.label} delay={i * 0.08}>
+                  <div className="p-5 rounded-2xl border border-gray-100 bg-gray-50">
+                    <p className="font-bold text-[#0a1e3a] mb-1 text-sm">{item.label}</p>
+                    <p className="text-gray-500 text-sm leading-relaxed">{item.detail}</p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       <HomeCTA />
     </>
   );
