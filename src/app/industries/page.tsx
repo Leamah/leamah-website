@@ -7,18 +7,18 @@ import HomeCTA from '@/components/home/HomeCTA';
 export const metadata: Metadata = {
   title: 'Industries We Serve',
   description:
-    'Leamah builds purpose-built software for retail, healthcare, logistics and professional services industries in South Africa.',
+    'Leamah builds purpose-built IT solutions for individuals and SMEs across inventory management, healthcare, logistics and professional services in South Africa.',
 };
 
 const INDUSTRIES = [
   {
-    name: 'Retail',
+    name: 'Inventory and Stock Management',
     product: 'Zanava',
     href: '/zanava',
     image: '/images/warehouse.jpg',
-    imageAlt: 'South African warehouse and retail storage',
+    imageAlt: 'South African warehouse and stock storage',
     description:
-      'South African retail faces unique pressures: tight margins and the challenge of managing stock across multiple locations. Zanava was built to handle these realities without expensive enterprise complexity.',
+      'Managing stock across multiple locations is a challenge for businesses of all sizes. Zanava gives individuals and SMEs real-time visibility of their inventory without the cost or complexity of enterprise software.',
     points: [
       'Real-time stock visibility across all locations',
       'Designed for the South African supplier and logistics context',

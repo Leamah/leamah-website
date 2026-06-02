@@ -6,7 +6,7 @@ import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { useRef } from 'react';
 
 const PRODUCTS = [
-  { label: 'Zanava', desc: 'Retail', color: '#f59e0b', href: '/zanava' },
+  { label: 'Zanava', desc: 'Inventory', color: '#f59e0b', href: '/zanava' },
   { label: 'Medico', desc: 'Healthcare', color: '#06b6d4', href: '/medico' },
   { label: 'Guluva', desc: 'Logistics', color: '#8b5cf6', href: '/guluva' },
   { label: 'Professional Services', desc: 'Finance', color: '#10b981', href: '/professional-services' },
@@ -126,7 +126,7 @@ export default function HeroSection() {
           className="text-lg sm:text-xl leading-relaxed mb-12 max-w-2xl"
           style={{ color: 'rgba(255,255,255,0.45)' }}
         >
-          Leamah partners with South African SMEs to deliver tailored solutions for retail, healthcare, logistics and professional services, built around the realities of doing business in Africa.
+          Leamah partners with South African individuals and SMEs to deliver tailored IT solutions across inventory management, healthcare, logistics and professional services, built around the realities of doing business in Africa.
         </motion.p>
 
         {/* CTA buttons */}

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const PRODUCTS = [
   {
     name: 'Zanava',
-    tagline: 'Retail and inventory management',
+    tagline: 'Inventory and stock management',
     desc: 'Track stock in real time across every location. Automate purchase orders, manage suppliers and schedule staff from one place.',
     href: '/zanava',
     accent: '#f59e0b',

@@ -6,17 +6,17 @@ import HomeCTA from '@/components/home/HomeCTA';
 export const metadata: Metadata = {
   title: 'Business Software Solutions for South African SMEs',
   description:
-    'Leamah builds purpose-built business management software for South African SMEs across retail, healthcare, logistics and professional services.',
+    'Leamah builds purpose-built IT solutions for South African individuals and SMEs across inventory management, healthcare, logistics and professional services.',
 };
 
 const PRODUCTS = [
   {
     name: 'Zanava',
-    tag: 'Retail and Inventory',
+    tag: 'Inventory and Stock Management',
     tagColor: '#4ade80',
     tagBg: '#f0fdf4',
     description:
-      'Zanava gives retailers real-time visibility of stock across multiple locations, automates purchase orders and manages staff and suppliers in one platform.',
+      'Zanava gives businesses real-time visibility of stock across multiple locations, automates purchase orders and manages staff and suppliers in one platform.',
     features: [
       'Multi-store stock tracking in real time',
       'Automated purchase order creation',
