@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const PRODUCTS = [
   { name: 'Zanava', href: '/zanava', desc: 'Retail and inventory management', accent: '#f59e0b' },
-  { name: 'Medico', href: '/medico', desc: 'Healthcare practice management', accent: '#06b6d4' },
+  { name: 'AugHale', href: '/aughale', desc: 'Augmented Health practice management', accent: '#06b6d4' },
   { name: 'Guluva', href: '/guluva', desc: 'Equipment hire and logistics', accent: '#8b5cf6' },
   { name: 'Professional Services', href: '/professional-services', desc: 'Invoicing, billing and CRM', accent: '#10b981' },
 ];

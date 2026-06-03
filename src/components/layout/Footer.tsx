@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const PRODUCTS = [
   { label: 'Zanava', href: '/zanava' },
-  { label: 'Medico', href: '/medico' },
+  { label: 'AugHale', href: '/aughale' },
   { label: 'Guluva', href: '/guluva' },
   { label: 'Professional Services', href: '/professional-services' },
 ];

@@ -29,12 +29,12 @@ const PRODUCTS = [
     reverse: false,
   },
   {
-    name: 'Medico',
-    tag: 'Healthcare',
+    name: 'AugHale',
+    tag: 'Augmented Health',
     tagColor: '#60a5fa',
     tagBg: '#eff6ff',
     description:
-      'Medico connects clinical operations and admin in one platform, from patient bookings to medical aid claims submission with built-in validation.',
+      'AugHale connects clinical operations and admin in one platform, from patient bookings to medical aid claims submission with built-in validation.',
     features: [
       'Intelligent appointment scheduling',
       'Digital claims submission with validation',
@@ -43,7 +43,7 @@ const PRODUCTS = [
       'Staff roster management',
       'Practice performance reporting',
     ],
-    href: '/medico',
+    href: '/aughale',
     reverse: true,
   },
   {
@@ -149,7 +149,7 @@ export default function SolutionsPage() {
                 >
                   <span className="text-7xl mb-4">
                     {product.name === 'Zanava' ? '🛒' :
-                     product.name === 'Medico' ? '🏥' :
+                     product.name === 'AugHale' ? '🏥' :
                      product.name === 'Guluva' ? '🚚' : '💼'}
                   </span>
                   <p className="text-2xl font-bold" style={{ color: '#0a1e3a' }}>{product.name}</p>

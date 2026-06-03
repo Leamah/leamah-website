@@ -1,13 +1,8 @@
-import type { Metadata } from 'next';
-import ProductHero from '@/components/shared/ProductHero';
-import ScrollReveal from '@/components/shared/ScrollReveal';
-import HomeCTA from '@/components/home/HomeCTA';
+import { redirect } from 'next/navigation';
 
-export const metadata: Metadata = {
-  title: 'Medico | Healthcare Practice Management Software',
-  description:
-    'Medico helps South African clinics and practices manage appointments, submit medical aid claims electronically and track inventory. Purpose-built for healthcare.',
-};
+export default function MedicoRedirect() {
+  redirect('/aughale');
+}
 
 const FEATURES = [
   {

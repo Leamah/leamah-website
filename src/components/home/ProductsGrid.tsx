@@ -20,10 +20,10 @@ const PRODUCTS = [
     ),
   },
   {
-    name: 'Medico',
-    tagline: 'Medical practice management',
+    name: 'AugHale',
+    tagline: 'Augmented Health',
     desc: 'Appointments, claims and patient records, all handled in one place.',
-    href: '/medico',
+    href: '/aughale',
     accent: '#06b6d4',
     glow: 'rgba(6,182,212,0.15)',
     bg: '#00080f',

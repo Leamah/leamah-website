@@ -9,7 +9,7 @@ type Step = 'idle' | 1 | 2 | 3 | 'success';
 
 const INTERESTS = [
   { label: 'Retail & Inventory', value: 'zanava', sub: 'Zanava' },
-  { label: 'Healthcare', value: 'medico', sub: 'Medico' },
+  { label: 'Healthcare', value: 'aughale', sub: 'AugHale' },
   { label: 'Logistics & Hire', value: 'guluva', sub: 'Guluva' },
   { label: 'Professional Services', value: 'proservices', sub: 'Invoicing' },
   { label: 'Something else', value: 'other', sub: '' },

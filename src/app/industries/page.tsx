@@ -27,12 +27,12 @@ const INDUSTRIES = [
   },
   {
     name: 'Healthcare',
-    product: 'Medico',
-    href: '/medico',
+    product: 'AugHale',
+    href: '/aughale',
     image: '/images/medical-clinic.jpg',
     imageAlt: 'South African medical clinic reception',
     description:
-      'Private clinics and practices in South Africa deal with complex medical aid schemes, high admin burden and strict compliance requirements. Medico cuts through the complexity so your team can spend more time on patients.',
+      'Private clinics and practices in South Africa deal with complex medical aid schemes, high admin burden and strict compliance requirements. AugHale cuts through the complexity so your team can spend more time on patients.',
     points: [
       'Built around South African medical aid billing rules',
       'POPIA-compliant electronic health records',

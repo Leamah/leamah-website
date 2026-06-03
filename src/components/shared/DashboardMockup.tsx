@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-type Variant = 'zanava' | 'medico' | 'guluva' | 'proservices';
+type Variant = 'zanava' | 'aughale' | 'guluva' | 'proservices';
 
 interface DashboardMockupProps {
   variant: Variant;
@@ -10,14 +10,14 @@ interface DashboardMockupProps {
 
 const navItems: Record<Variant, string[]> = {
   zanava: ['Dashboard', 'Inventory', 'Orders', 'Suppliers', 'Staff', 'Reports'],
-  medico: ['Dashboard', 'Patients', 'Appointments', 'Claims', 'Inventory', 'Reports'],
+  aughale: ['Dashboard', 'Patients', 'Appointments', 'Claims', 'Inventory', 'Reports'],
   guluva: ['Dashboard', 'Bookings', 'Fleet', 'Drivers', 'Payments', 'Reports'],
   proservices: ['Dashboard', 'Invoices', 'Clients', 'Time', 'Documents', 'Reports'],
 };
 
 const accentColors: Record<Variant, string> = {
   zanava: '#4ade80',
-  medico: '#60a5fa',
+  aughale: '#60a5fa',
   guluva: '#f97316',
   proservices: '#a78bfa',
 };
@@ -144,7 +144,7 @@ function ProservicesContent() {
 
 const contentMap: Record<Variant, React.ReactNode> = {
   zanava: <ZanavaContent />,
-  medico: <MedicoContent />,
+  aughale: <MedicoContent />,
   guluva: <GuluvaContent />,
   proservices: <ProservicesContent />,
 };

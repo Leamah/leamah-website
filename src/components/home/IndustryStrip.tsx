@@ -14,9 +14,9 @@ const INDUSTRIES = [
   },
   {
     name: 'Healthcare',
-    product: 'Medico',
+    product: 'AugHale',
     desc: 'Patient scheduling, electronic claims and records for clinics and solo practitioners.',
-    href: '/medico',
+    href: '/aughale',
     accent: '#06b6d4',
     num: '02',
   },

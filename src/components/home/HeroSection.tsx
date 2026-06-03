@@ -7,7 +7,7 @@ import { useRef } from 'react';
 
 const PRODUCTS = [
   { label: 'Zanava', desc: 'Inventory', color: '#f59e0b', href: '/zanava' },
-  { label: 'Medico', desc: 'Healthcare', color: '#06b6d4', href: '/medico' },
+  { label: 'AugHale', desc: 'Augmented Health', color: '#06b6d4', href: '/aughale' },
   { label: 'Guluva', desc: 'Logistics', color: '#8b5cf6', href: '/guluva' },
   { label: 'Professional Services', desc: 'Finance', color: '#10b981', href: '/professional-services' },
 ];

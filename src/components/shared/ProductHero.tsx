@@ -8,7 +8,7 @@ interface ProductHeroProps {
   features: string[];
   ctaText?: string;
   ctaHref?: string;
-  variant: 'zanava' | 'medico' | 'guluva' | 'proservices';
+  variant: 'zanava' | 'aughale' | 'guluva' | 'proservices';
   accentColor?: string;
 }
 
