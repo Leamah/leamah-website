@@ -8,7 +8,7 @@ import { track, submitLead } from '@/lib/track';
 type Step = 'idle' | 1 | 2 | 3 | 'success';
 
 const INTERESTS = [
-  { label: 'Retail & Inventory', value: 'zanava', sub: 'Zanava' },
+  { label: 'Retail & Inventory', value: 'kuco', sub: 'Kuco' },
   { label: 'Healthcare', value: 'aughale', sub: 'AugHale' },
   { label: 'Logistics & Hire', value: 'guluva', sub: 'Guluva' },
   { label: 'Professional Services', value: 'proservices', sub: 'Invoicing' },

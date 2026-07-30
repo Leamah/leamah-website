@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 const INDUSTRIES = [
   {
     name: 'Retail and Wholesale',
-    product: 'Zanava',
-    href: '/zanava',
+    product: 'Kuco',
+    href: '/kuco',
     image: '/images/warehouse.jpg',
     imageAlt: 'South African warehouse and stock storage',
     description:
-      'Managing stock across multiple locations is a challenge for businesses of all sizes. Zanava gives individuals and SMEs real-time visibility of their inventory without the cost or complexity of enterprise software.',
+      'Managing stock across multiple locations is a challenge for businesses of all sizes. Kuco gives individuals and SMEs real-time visibility of their inventory without the cost or complexity of enterprise software.',
     points: [
       'Real-time stock visibility across all locations',
       'Designed for the South African supplier and logistics context',

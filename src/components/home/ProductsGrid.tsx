@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 
 const PRODUCTS = [
   {
-    name: 'Zanava',
+    name: 'Kuco',
     tagline: 'Stock and business operations',
     desc: 'Track stock in real time across every location. Automate purchase orders, manage suppliers and schedule staff from one place.',
-    href: '/zanava',
+    href: '/kuco',
     accent: '#f59e0b',
     glow: 'rgba(245,158,11,0.15)',
     bg: '#0f0a00',

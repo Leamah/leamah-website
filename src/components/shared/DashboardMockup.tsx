@@ -2,27 +2,28 @@
 
 import { motion } from 'framer-motion';
 
-type Variant = 'zanava' | 'aughale' | 'guluva' | 'proservices';
+type Variant = 'kuco' | 'aughale' | 'guluva' | 'proservices';
+
 
 interface DashboardMockupProps {
   variant: Variant;
 }
 
 const navItems: Record<Variant, string[]> = {
-  zanava: ['Dashboard', 'Inventory', 'Orders', 'Suppliers', 'Staff', 'Reports'],
+  kuco: ['Dashboard', 'Inventory', 'Orders', 'Suppliers', 'Staff', 'Reports'],
   aughale: ['Dashboard', 'Patients', 'Appointments', 'Claims', 'Inventory', 'Reports'],
   guluva: ['Dashboard', 'Bookings', 'Fleet', 'Drivers', 'Payments', 'Reports'],
   proservices: ['Dashboard', 'Invoices', 'Clients', 'Time', 'Documents', 'Reports'],
 };
 
 const accentColors: Record<Variant, string> = {
-  zanava: '#4ade80',
+  kuco: '#4ade80',
   aughale: '#60a5fa',
   guluva: '#f97316',
   proservices: '#a78bfa',
 };
 
-function ZanavaContent() {
+function KucoContent() {
   const bars = [65, 80, 50, 90, 70, 55];
   return (
     <div className="flex flex-col gap-3 h-full">
@@ -143,7 +144,7 @@ function ProservicesContent() {
 }
 
 const contentMap: Record<Variant, React.ReactNode> = {
-  zanava: <ZanavaContent />,
+  kuco: <KucoContent />,
   aughale: <MedicoContent />,
   guluva: <GuluvaContent />,
   proservices: <ProservicesContent />,

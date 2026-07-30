@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 
 const PRODUCTS = [
   {
-    name: 'Zanava',
+    name: 'Kuco',
     tag: 'Retail and Wholesale',
     tagColor: '#4ade80',
     tagBg: '#f0fdf4',
     description:
-      'Zanava gives businesses real-time visibility of stock across multiple locations, automates purchase orders and manages staff and suppliers in one platform.',
+      'Kuco gives businesses real-time visibility of stock across multiple locations, automates purchase orders and manages staff and suppliers in one platform.',
     features: [
       'Multi-store stock tracking in real time',
       'Automated purchase order creation',
@@ -25,7 +25,7 @@ const PRODUCTS = [
       'Loss prevention reporting',
       'Sales analytics and margin tracking',
     ],
-    href: '/zanava',
+    href: '/kuco',
     reverse: false,
   },
   {
@@ -148,7 +148,7 @@ export default function SolutionsPage() {
                   style={{ background: product.tagBg }}
                 >
                   <span className="text-7xl mb-4">
-                    {product.name === 'Zanava' ? '🛒' :
+                    {product.name === 'Kuco' ? '🛒' :
                      product.name === 'AugHale' ? '🏥' :
                      product.name === 'Guluva' ? '🚚' : '💼'}
                   </span>

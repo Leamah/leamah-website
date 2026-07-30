@@ -4,7 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: 'https://leamah.co.za', lastModified: new Date(), priority: 1.0 },
     { url: 'https://leamah.co.za/solutions', lastModified: new Date(), priority: 0.9 },
-    { url: 'https://leamah.co.za/zanava', lastModified: new Date(), priority: 0.9 },
+    { url: 'https://leamah.co.za/kuco', lastModified: new Date(), priority: 0.9 },
     { url: 'https://leamah.co.za/aughale', lastModified: new Date(), priority: 0.9 },
     { url: 'https://leamah.co.za/guluva', lastModified: new Date(), priority: 0.9 },
     { url: 'https://leamah.co.za/professional-services', lastModified: new Date(), priority: 0.9 },

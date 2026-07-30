@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const PRODUCTS = [
-  { label: 'Zanava', href: '/zanava' },
+  { label: 'Kuco', href: '/kuco' },
   { label: 'AugHale', href: '/aughale' },
   { label: 'Guluva', href: '/guluva' },
   { label: 'Professional Services', href: '/professional-services' },
