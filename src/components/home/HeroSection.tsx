@@ -114,10 +114,8 @@ export default function HeroSection() {
           className="font-black leading-[1.02] tracking-tight text-white mb-6"
           style={{ fontSize: 'clamp(3rem, 8vw, 5.5rem)' }}
         >
-          The software your{' '}
-          <span className="gradient-text">business actually needs.</span>
-          <br />
-          Built for Africa.
+          Helping businesses become{' '}
+          <span className="gradient-text">digitally managed.</span>
         </motion.h1>
 
         {/* Sub */}
@@ -126,7 +124,7 @@ export default function HeroSection() {
           className="text-lg sm:text-xl leading-relaxed mb-12 max-w-2xl"
           style={{ color: 'rgba(255,255,255,0.45)' }}
         >
-          We build software for South African individuals and SMEs that actually fits how you work. Not imported, not generic. Built here, for the real challenges of running a business in Africa.
+          Every growing business reaches a point where disconnected tools and manual processes start slowing it down. Leamah builds digital operating systems that help businesses run with clarity, consistency and confidence.
         </motion.p>
 
         {/* CTA buttons */}
