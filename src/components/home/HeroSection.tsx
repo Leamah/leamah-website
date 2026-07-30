@@ -114,8 +114,8 @@ export default function HeroSection() {
           className="font-black leading-[1.02] tracking-tight text-white mb-6"
           style={{ fontSize: 'clamp(3rem, 8vw, 5.5rem)' }}
         >
-          One partner.{' '}
-          <span className="gradient-text">Multiple industries.</span>
+          The software your{' '}
+          <span className="gradient-text">business actually needs.</span>
           <br />
           Built for Africa.
         </motion.h1>
@@ -126,7 +126,7 @@ export default function HeroSection() {
           className="text-lg sm:text-xl leading-relaxed mb-12 max-w-2xl"
           style={{ color: 'rgba(255,255,255,0.45)' }}
         >
-          Leamah is a South African IT solutions company partnering with individuals and SMEs to deliver purpose-built software that works for your industry and your business, built around the realities of doing business in Africa.
+          We build software for South African individuals and SMEs that actually fits how you work. Not imported, not generic. Built here, for the real challenges of running a business in Africa.
         </motion.p>
 
         {/* CTA buttons */}
