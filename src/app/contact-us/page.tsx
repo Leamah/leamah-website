@@ -72,10 +72,10 @@ export default function ContactPage() {
                       <div>
                         <p className="text-sm font-semibold text-[#0a1e3a] mb-0.5">Phone</p>
                         <a
-                          href="tel:+27218913999"
+                          href="tel:+27213010481"
                           className="text-sm text-gray-500 hover:text-[#0a1e3a] transition-colors"
                         >
-                          021 891 3999
+                          021 301 0481
                         </a>
                       </div>
                     </div>
